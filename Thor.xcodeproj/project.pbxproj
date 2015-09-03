@@ -20,6 +20,9 @@
 		CCF219A61B960839002FD876 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF2199B1B960839002FD876 /* libOCMock.a */; };
 		CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AA1B960988002FD876 /* HsMockApiServer.m */; };
 		CCF219AE1B961A16002FD876 /* HsTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AD1B961A16002FD876 /* HsTransport.m */; };
+		CCF21A8C1B98CB26002FD876 /* Fox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF21A891B98CB13002FD876 /* Fox.framework */; };
+		CCF21A8E1B98CC3C002FD876 /* PropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */; };
+		CCF21A911B98CE25002FD876 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF21A901B98CE25002FD876 /* Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = CCF219641B960337002FD876;
 			remoteInfo = Thor;
+		};
+		CCF21A841B98CB13002FD876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F41BE901A2ACB9C00F25A65;
+			remoteInfo = "Fox-OSX";
+		};
+		CCF21A861B98CB13002FD876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F41BE9A1A2ACB9C00F25A65;
+			remoteInfo = "Fox-OSXTests";
+		};
+		CCF21A881B98CB13002FD876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F41BEAE1A2ACBA300F25A65;
+			remoteInfo = "Fox-iOS";
+		};
+		CCF21A8A1B98CB13002FD876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F41BEB81A2ACBA300F25A65;
+			remoteInfo = "Fox-iOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +98,10 @@
 		CCF219AC1B961A16002FD876 /* HsTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HsTransport.h; path = network/HsTransport.h; sourceTree = "<group>"; };
 		CCF219AD1B961A16002FD876 /* HsTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HsTransport.m; path = network/HsTransport.m; sourceTree = "<group>"; };
 		CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = XcodeCoverage.xcconfig; path = XcodeCoverage/XcodeCoverage.xcconfig; sourceTree = "<group>"; };
+		CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fox.xcodeproj; path = Externals/Fox/Fox.xcodeproj; sourceTree = "<group>"; };
+		CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyTests.m; path = ThorTests/PropertyTests/PropertyTests.m; sourceTree = "<group>"; };
+		CCF21A8F1B98CE25002FD876 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = PropertyTests/Queue.h; sourceTree = "<group>"; };
+		CCF21A901B98CE25002FD876 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = PropertyTests/Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF21A8C1B98CB26002FD876 /* Fox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +127,8 @@
 		CCF2195C1B960337002FD876 = {
 			isa = PBXGroup;
 			children = (
+				CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */,
+				CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */,
 				CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */,
 				CCF2199A1B960839002FD876 /* Mock */,
 				CCF219671B960337002FD876 /* Thor */,
@@ -143,6 +181,8 @@
 				CCF219971B9607D2002FD876 /* storage */,
 				CCF219871B960337002FD876 /* ThorTests.m */,
 				CCF219851B960337002FD876 /* Supporting Files */,
+				CCF21A8F1B98CE25002FD876 /* Queue.h */,
+				CCF21A901B98CE25002FD876 /* Queue.m */,
 			);
 			path = ThorTests;
 			sourceTree = "<group>";
@@ -217,6 +257,17 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		CCF21A7E1B98CB13002FD876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF21A851B98CB13002FD876 /* Fox.framework */,
+				CCF21A871B98CB13002FD876 /* Fox-OSXTests.xctest */,
+				CCF21A891B98CB13002FD876 /* Fox.framework */,
+				CCF21A8B1B98CB13002FD876 /* Fox-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,6 +336,12 @@
 			mainGroup = CCF2195C1B960337002FD876;
 			productRefGroup = CCF219661B960337002FD876 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCF21A7E1B98CB13002FD876 /* Products */;
+					ProjectRef = CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CCF219641B960337002FD876 /* Thor */,
@@ -292,6 +349,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CCF21A851B98CB13002FD876 /* Fox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Fox.framework;
+			remoteRef = CCF21A841B98CB13002FD876 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCF21A871B98CB13002FD876 /* Fox-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Fox-OSXTests.xctest";
+			remoteRef = CCF21A861B98CB13002FD876 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCF21A891B98CB13002FD876 /* Fox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Fox.framework;
+			remoteRef = CCF21A881B98CB13002FD876 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCF21A8B1B98CB13002FD876 /* Fox-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Fox-iOSTests.xctest";
+			remoteRef = CCF21A8A1B98CB13002FD876 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CCF219631B960337002FD876 /* Resources */ = {
@@ -348,8 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF21A911B98CE25002FD876 /* Queue.m in Sources */,
 				CCF219991B960817002FD876 /* HsKeyValueStorageTests.m in Sources */,
 				CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */,
+				CCF21A8E1B98CC3C002FD876 /* PropertyTests.m in Sources */,
 				CCF219881B960337002FD876 /* ThorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

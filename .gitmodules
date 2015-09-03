@@ -1,0 +1,3 @@
+[submodule "Externals/Fox"]
+	path = Externals/Fox
+	url = https://github.com/jeffh/Fox.git
