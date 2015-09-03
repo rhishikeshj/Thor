@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCF2196B1B960337002FD876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF2196A1B960337002FD876 /* main.m */; };
+		CCF2196E1B960337002FD876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF2196D1B960337002FD876 /* AppDelegate.m */; };
+		CCF219711B960337002FD876 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219701B960337002FD876 /* MasterViewController.m */; };
+		CCF219741B960337002FD876 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219731B960337002FD876 /* DetailViewController.m */; };
+		CCF219771B960337002FD876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF219751B960337002FD876 /* Main.storyboard */; };
+		CCF219791B960337002FD876 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF219781B960337002FD876 /* Images.xcassets */; };
+		CCF2197C1B960337002FD876 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF2197A1B960337002FD876 /* LaunchScreen.xib */; };
+		CCF219881B960337002FD876 /* ThorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219871B960337002FD876 /* ThorTests.m */; };
+		CCF219961B960411002FD876 /* HsKeyValueBundleStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219941B960411002FD876 /* HsKeyValueBundleStorage.m */; };
+		CCF219991B960817002FD876 /* HsKeyValueStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219981B960817002FD876 /* HsKeyValueStorageTests.m */; };
+		CCF219A61B960839002FD876 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF2199B1B960839002FD876 /* libOCMock.a */; };
+		CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AA1B960988002FD876 /* HsMockApiServer.m */; };
+		CCF219AE1B961A16002FD876 /* HsTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AD1B961A16002FD876 /* HsTransport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCF219821B960337002FD876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF2195D1B960337002FD876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF219641B960337002FD876;
+			remoteInfo = Thor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCF219651B960337002FD876 /* Thor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF219691B960337002FD876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF2196A1B960337002FD876 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCF2196C1B960337002FD876 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCF2196D1B960337002FD876 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCF2196F1B960337002FD876 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		CCF219701B960337002FD876 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		CCF219721B960337002FD876 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CCF219731B960337002FD876 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CCF219761B960337002FD876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCF219781B960337002FD876 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCF2197B1B960337002FD876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCF219811B960337002FD876 /* ThorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF219861B960337002FD876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF219871B960337002FD876 /* ThorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThorTests.m; sourceTree = "<group>"; };
+		CCF219931B960411002FD876 /* HsKeyValueBundleStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HsKeyValueBundleStorage.h; path = Thor/storage/HsKeyValueBundleStorage.h; sourceTree = SOURCE_ROOT; };
+		CCF219941B960411002FD876 /* HsKeyValueBundleStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HsKeyValueBundleStorage.m; path = Thor/storage/HsKeyValueBundleStorage.m; sourceTree = SOURCE_ROOT; };
+		CCF219951B960411002FD876 /* HsKeyValueStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HsKeyValueStorage.h; path = Thor/storage/HsKeyValueStorage.h; sourceTree = SOURCE_ROOT; };
+		CCF219981B960817002FD876 /* HsKeyValueStorageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HsKeyValueStorageTests.m; path = storage/HsKeyValueStorageTests.m; sourceTree = "<group>"; };
+		CCF2199B1B960839002FD876 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		CCF2199D1B960839002FD876 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		CCF2199E1B960839002FD876 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		CCF2199F1B960839002FD876 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		CCF219A01B960839002FD876 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		CCF219A11B960839002FD876 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		CCF219A21B960839002FD876 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		CCF219A31B960839002FD876 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		CCF219A41B960839002FD876 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		CCF219A51B960839002FD876 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		CCF219A91B960988002FD876 /* HsMockApiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HsMockApiServer.h; sourceTree = "<group>"; };
+		CCF219AA1B960988002FD876 /* HsMockApiServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HsMockApiServer.m; sourceTree = "<group>"; };
+		CCF219AC1B961A16002FD876 /* HsTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HsTransport.h; path = network/HsTransport.h; sourceTree = "<group>"; };
+		CCF219AD1B961A16002FD876 /* HsTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HsTransport.m; path = network/HsTransport.m; sourceTree = "<group>"; };
+		CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = XcodeCoverage.xcconfig; path = XcodeCoverage/XcodeCoverage.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCF219621B960337002FD876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF2197E1B960337002FD876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF219A61B960839002FD876 /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCF2195C1B960337002FD876 = {
+			isa = PBXGroup;
+			children = (
+				CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */,
+				CCF2199A1B960839002FD876 /* Mock */,
+				CCF219671B960337002FD876 /* Thor */,
+				CCF219841B960337002FD876 /* ThorTests */,
+				CCF219661B960337002FD876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCF219661B960337002FD876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219651B960337002FD876 /* Thor.app */,
+				CCF219811B960337002FD876 /* ThorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF219671B960337002FD876 /* Thor */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219A71B9608A3002FD876 /* network */,
+				CCF219911B96038C002FD876 /* storage */,
+				CCF2196C1B960337002FD876 /* AppDelegate.h */,
+				CCF2196D1B960337002FD876 /* AppDelegate.m */,
+				CCF2196F1B960337002FD876 /* MasterViewController.h */,
+				CCF219701B960337002FD876 /* MasterViewController.m */,
+				CCF219721B960337002FD876 /* DetailViewController.h */,
+				CCF219731B960337002FD876 /* DetailViewController.m */,
+				CCF219751B960337002FD876 /* Main.storyboard */,
+				CCF219781B960337002FD876 /* Images.xcassets */,
+				CCF2197A1B960337002FD876 /* LaunchScreen.xib */,
+				CCF219681B960337002FD876 /* Supporting Files */,
+			);
+			path = Thor;
+			sourceTree = "<group>";
+		};
+		CCF219681B960337002FD876 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219691B960337002FD876 /* Info.plist */,
+				CCF2196A1B960337002FD876 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF219841B960337002FD876 /* ThorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219A81B960988002FD876 /* network */,
+				CCF219971B9607D2002FD876 /* storage */,
+				CCF219871B960337002FD876 /* ThorTests.m */,
+				CCF219851B960337002FD876 /* Supporting Files */,
+			);
+			path = ThorTests;
+			sourceTree = "<group>";
+		};
+		CCF219851B960337002FD876 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219861B960337002FD876 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF219911B96038C002FD876 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219931B960411002FD876 /* HsKeyValueBundleStorage.h */,
+				CCF219941B960411002FD876 /* HsKeyValueBundleStorage.m */,
+				CCF219951B960411002FD876 /* HsKeyValueStorage.h */,
+			);
+			name = storage;
+			sourceTree = "<group>";
+		};
+		CCF219971B9607D2002FD876 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219981B960817002FD876 /* HsKeyValueStorageTests.m */,
+			);
+			name = storage;
+			sourceTree = "<group>";
+		};
+		CCF2199A1B960839002FD876 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CCF2199B1B960839002FD876 /* libOCMock.a */,
+				CCF2199C1B960839002FD876 /* OCMock */,
+			);
+			name = Mock;
+			path = ThorTests/Mock;
+			sourceTree = "<group>";
+		};
+		CCF2199C1B960839002FD876 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				CCF2199D1B960839002FD876 /* NSNotificationCenter+OCMAdditions.h */,
+				CCF2199E1B960839002FD876 /* OCMArg.h */,
+				CCF2199F1B960839002FD876 /* OCMConstraint.h */,
+				CCF219A01B960839002FD876 /* OCMLocation.h */,
+				CCF219A11B960839002FD876 /* OCMMacroState.h */,
+				CCF219A21B960839002FD876 /* OCMock.h */,
+				CCF219A31B960839002FD876 /* OCMockObject.h */,
+				CCF219A41B960839002FD876 /* OCMRecorder.h */,
+				CCF219A51B960839002FD876 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		CCF219A71B9608A3002FD876 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219AC1B961A16002FD876 /* HsTransport.h */,
+				CCF219AD1B961A16002FD876 /* HsTransport.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		CCF219A81B960988002FD876 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CCF219A91B960988002FD876 /* HsMockApiServer.h */,
+				CCF219AA1B960988002FD876 /* HsMockApiServer.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCF219641B960337002FD876 /* Thor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF2198B1B960337002FD876 /* Build configuration list for PBXNativeTarget "Thor" */;
+			buildPhases = (
+				CCF219611B960337002FD876 /* Sources */,
+				CCF219621B960337002FD876 /* Frameworks */,
+				CCF219631B960337002FD876 /* Resources */,
+				CCF21A7C1B98C91D002FD876 /* Export for code coverage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thor;
+			productName = Thor;
+			productReference = CCF219651B960337002FD876 /* Thor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCF219801B960337002FD876 /* ThorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF2198E1B960337002FD876 /* Build configuration list for PBXNativeTarget "ThorTests" */;
+			buildPhases = (
+				CCF2197D1B960337002FD876 /* Sources */,
+				CCF2197E1B960337002FD876 /* Frameworks */,
+				CCF2197F1B960337002FD876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF219831B960337002FD876 /* PBXTargetDependency */,
+			);
+			name = ThorTests;
+			productName = ThorTests;
+			productReference = CCF219811B960337002FD876 /* ThorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCF2195D1B960337002FD876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Helpshift Inc";
+				TargetAttributes = {
+					CCF219641B960337002FD876 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CCF219801B960337002FD876 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CCF219641B960337002FD876;
+					};
+				};
+			};
+			buildConfigurationList = CCF219601B960337002FD876 /* Build configuration list for PBXProject "Thor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCF2195C1B960337002FD876;
+			productRefGroup = CCF219661B960337002FD876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCF219641B960337002FD876 /* Thor */,
+				CCF219801B960337002FD876 /* ThorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCF219631B960337002FD876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF219771B960337002FD876 /* Main.storyboard in Resources */,
+				CCF2197C1B960337002FD876 /* LaunchScreen.xib in Resources */,
+				CCF219791B960337002FD876 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF2197F1B960337002FD876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCF21A7C1B98C91D002FD876 /* Export for code coverage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Export for code coverage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $SRCROOT/XcodeCoverage/exportenv.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCF219611B960337002FD876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF2196E1B960337002FD876 /* AppDelegate.m in Sources */,
+				CCF219711B960337002FD876 /* MasterViewController.m in Sources */,
+				CCF219AE1B961A16002FD876 /* HsTransport.m in Sources */,
+				CCF219961B960411002FD876 /* HsKeyValueBundleStorage.m in Sources */,
+				CCF2196B1B960337002FD876 /* main.m in Sources */,
+				CCF219741B960337002FD876 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF2197D1B960337002FD876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF219991B960817002FD876 /* HsKeyValueStorageTests.m in Sources */,
+				CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */,
+				CCF219881B960337002FD876 /* ThorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCF219831B960337002FD876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF219641B960337002FD876 /* Thor */;
+			targetProxy = CCF219821B960337002FD876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCF219751B960337002FD876 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF219761B960337002FD876 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCF2197A1B960337002FD876 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF2197B1B960337002FD876 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCF219891B960337002FD876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCF2198A1B960337002FD876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCF2198C1B960337002FD876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				INFOPLIST_FILE = Thor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCF2198D1B960337002FD876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				INFOPLIST_FILE = Thor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCF2198F1B960337002FD876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThorTests/Mock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thor.app/Thor";
+			};
+			name = Debug;
+		};
+		CCF219901B960337002FD876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThorTests/Mock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thor.app/Thor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCF219601B960337002FD876 /* Build configuration list for PBXProject "Thor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF219891B960337002FD876 /* Debug */,
+				CCF2198A1B960337002FD876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF2198B1B960337002FD876 /* Build configuration list for PBXNativeTarget "Thor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF2198C1B960337002FD876 /* Debug */,
+				CCF2198D1B960337002FD876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF2198E1B960337002FD876 /* Build configuration list for PBXNativeTarget "ThorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF2198F1B960337002FD876 /* Debug */,
+				CCF219901B960337002FD876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCF2195D1B960337002FD876 /* Project object */;
+}

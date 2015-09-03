@@ -1,0 +1,5 @@
+export BUILT_PRODUCTS_DIR="/Users/rhishikeshj/Library/Developer/Xcode/DerivedData/Thor-cdossuitnqwqqngpccjkoazdoiyh/Build/Products/Debug-iphonesimulator"
+export CURRENT_ARCH="x86_64"
+export OBJECT_FILE_DIR_normal="/Users/rhishikeshj/Library/Developer/Xcode/DerivedData/Thor-cdossuitnqwqqngpccjkoazdoiyh/Build/Intermediates/Thor.build/Debug-iphonesimulator/Thor.build/Objects-normal"
+export OBJROOT="/Users/rhishikeshj/Library/Developer/Xcode/DerivedData/Thor-cdossuitnqwqqngpccjkoazdoiyh/Build/Intermediates"
+export SRCROOT="/Users/rhishikeshj/workspace/playground/Thor"
