@@ -20,9 +20,8 @@
 		CCF219A61B960839002FD876 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF2199B1B960839002FD876 /* libOCMock.a */; };
 		CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AA1B960988002FD876 /* HsMockApiServer.m */; };
 		CCF219AE1B961A16002FD876 /* HsTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF219AD1B961A16002FD876 /* HsTransport.m */; };
-		CCF21A8C1B98CB26002FD876 /* Fox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF21A891B98CB13002FD876 /* Fox.framework */; };
-		CCF21A8E1B98CC3C002FD876 /* PropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */; };
 		CCF21A911B98CE25002FD876 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF21A901B98CE25002FD876 /* Queue.m */; };
+		CCF21B2C1B9A79AF002FD876 /* ThorNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF21B2B1B9A79AF002FD876 /* ThorNetworkTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,9 +98,9 @@
 		CCF219AD1B961A16002FD876 /* HsTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HsTransport.m; path = network/HsTransport.m; sourceTree = "<group>"; };
 		CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = XcodeCoverage.xcconfig; path = XcodeCoverage/XcodeCoverage.xcconfig; sourceTree = "<group>"; };
 		CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fox.xcodeproj; path = Externals/Fox/Fox.xcodeproj; sourceTree = "<group>"; };
-		CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyTests.m; path = ThorTests/PropertyTests/PropertyTests.m; sourceTree = "<group>"; };
 		CCF21A8F1B98CE25002FD876 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = PropertyTests/Queue.h; sourceTree = "<group>"; };
 		CCF21A901B98CE25002FD876 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = PropertyTests/Queue.m; sourceTree = "<group>"; };
+		CCF21B2B1B9A79AF002FD876 /* ThorNetworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThorNetworkTests.m; path = network/ThorNetworkTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF21A8C1B98CB26002FD876 /* Fox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +125,6 @@
 		CCF2195C1B960337002FD876 = {
 			isa = PBXGroup;
 			children = (
-				CCF21A8D1B98CC3C002FD876 /* PropertyTests.m */,
 				CCF21A7D1B98CB13002FD876 /* Fox.xcodeproj */,
 				CCF21A7B1B98C85C002FD876 /* XcodeCoverage.xcconfig */,
 				CCF2199A1B960839002FD876 /* Mock */,
@@ -208,6 +205,7 @@
 		CCF219971B9607D2002FD876 /* storage */ = {
 			isa = PBXGroup;
 			children = (
+				CCF21B2B1B9A79AF002FD876 /* ThorNetworkTests.m */,
 				CCF219981B960817002FD876 /* HsKeyValueStorageTests.m */,
 			);
 			name = storage;
@@ -436,10 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF21B2C1B9A79AF002FD876 /* ThorNetworkTests.m in Sources */,
 				CCF21A911B98CE25002FD876 /* Queue.m in Sources */,
 				CCF219991B960817002FD876 /* HsKeyValueStorageTests.m in Sources */,
 				CCF219AB1B960988002FD876 /* HsMockApiServer.m in Sources */,
-				CCF21A8E1B98CC3C002FD876 /* PropertyTests.m in Sources */,
 				CCF219881B960337002FD876 /* ThorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

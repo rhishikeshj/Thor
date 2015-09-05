@@ -26,7 +26,9 @@
                 withData:(NSData *) data
       andCompletionBlock:(HsHttpTaskCompletionBlock)completionHandler {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlRequest];
-    NSURLSessionUploadTask *uploadTask = [_session uploadTaskWithRequest:request fromData:data completionHandler:completionHandler];
+    request.HTTPBody = data;
+    request.HTTPMethod = @"POST";
+    NSURLSessionDataTask *uploadTask = [_session dataTaskWithRequest:request completionHandler:completionHandler];
     [uploadTask resume];
 }
 
@@ -62,8 +64,12 @@
 }
 
 + (NSURLSession *) sessionForForegroundRequests {
-    NSURLSessionConfiguration *config = [self configureSessionConfig:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+    static NSURLSession *session = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSURLSessionConfiguration *config = [self configureSessionConfig:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+    });
 
     return session;
 }

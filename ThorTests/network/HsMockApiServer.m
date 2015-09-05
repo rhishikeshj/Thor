@@ -36,16 +36,14 @@
     NSData *responseData = [NSJSONSerialization dataWithJSONObject:returnData options:0 error:nil];
 
     OCMStub([[[self.mockFgUrlSession stub] andDo:[self getPostResponseBlockForSuccessWithData:responseData]]
-             uploadTaskWithRequest:[self getRequestCheckBlockForPost]
-             fromData:[self getRequestDataCheckBlockForPost]
+             dataTaskWithRequest:[self getRequestCheckBlockForPost]
              completionHandler:[OCMArg any]]);
 }
 
 
 - (void) configureForegroundPostForTimestampMismatch {
     OCMStub([[[self.mockFgUrlSession stub] andDo:[self getPostResponseBlockForTimestampMismatch]]
-             uploadTaskWithRequest:[self getRequestCheckBlockForPost]
-             fromData:[self getRequestDataCheckBlockForPost]
+             dataTaskWithRequest:[self getRequestCheckBlockForPost]
              completionHandler:[OCMArg any]]);
 }
 
@@ -65,8 +63,7 @@
 }
 
 - (void) verifyUrlForRequest:(NSURLRequest *)request {  // throws Url mismatch exception
-    NSString *requestPath = [NSString stringWithFormat:@"%@://%@%@/", request.URL.scheme, request.URL.host, request.URL.path];
-
+    NSString *requestPath = [NSString stringWithFormat:@"%@://%@:%@%@/", request.URL.scheme, request.URL.host, request.URL.port, request.URL.path];
     if(![requestPath isEqualToString:self.url]) {
         @throw [NSException exceptionWithName:@"Url mismatch" reason:@"url mismatch" userInfo:nil];
     }
@@ -105,7 +102,7 @@
 - (ProxyResponseBlock) getPostResponseBlockForSuccessWithData:(NSData *)data {
     ProxyResponseBlock postBlock = ^(NSInvocation *invocation) {
         void (^passedBlock)(NSData *data, NSURLResponse *response, NSError *error);
-        [invocation getArgument:&passedBlock atIndex:4];
+        [invocation getArgument:&passedBlock atIndex:3];
         NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] initWithURL:[[NSURL alloc] initWithString:self.url]
                                                                      statusCode:200
                                                                     HTTPVersion:@"HTTP 1.1"
@@ -120,13 +117,14 @@
 - (ProxyResponseBlock) getPostResponseBlockForTimestampMismatch {
     ProxyResponseBlock postBlock = ^(NSInvocation *invocation) {
         void (^passedBlock)(NSData *data, NSURLResponse *response, NSError *error);
-        [invocation getArgument:&passedBlock atIndex:4];
+        [invocation getArgument:&passedBlock atIndex:3];
         NSString *timeStamp = [[NSString alloc] initWithFormat:@"%.0f", [[NSDate date] timeIntervalSince1970]];
         NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] initWithURL:[[NSURL alloc] initWithString:self.url]
                                                                      statusCode:422
                                                                     HTTPVersion:@"HTTP 1.1"
                                                                    headerFields:@{ @"HS-UEpoch" : timeStamp }];
-        passedBlock(nil, urlResponse, nil);
+        NSDictionary *responseData = @{@"message" : @"You're from the past ?"};
+        passedBlock([NSJSONSerialization dataWithJSONObject:responseData options:0 error:nil], urlResponse, nil);
     };
 
     return postBlock;

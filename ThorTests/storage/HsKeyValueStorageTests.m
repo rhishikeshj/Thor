@@ -9,13 +9,13 @@
 #import "HsKeyValueBundleStorage.h"
 #import "OCMock.h"
 
-#define RUN_COUNT 50
+#define RUN_COUNT 10
 
 @interface HsKeyValueBundleStorage ()
-
 @property (strong, nonatomic) dispatch_queue_t workerQueue;
 
 @end
+
 @interface HsKeyValueStorageTests : XCTestCase
 @property (strong, nonatomic) id mockedUserDefaults;
 @end

@@ -22,10 +22,4 @@ typedef void (^ProxyResponseBlock)(NSInvocation *);
 
 - (void) configureForegroundPostForTimestampMismatch;
 
-- (void) configureBackgroundGetForSuccessWithData:(id)returnData;
-- (void) configureBackgroundGetForSuccessWithData:(id)returnData forTransport:(HsTransport *) transport;
-
-- (void) configureBackgroundPostForSuccessWithData:(id)returnData;
-
-- (void) configureBackgroundPostForTimestampMismatch;
 @end

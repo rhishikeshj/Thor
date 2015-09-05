@@ -51,6 +51,11 @@
                BlueprintName = "ThorTests"
                ReferencedContainer = "container:Thor.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "PropertyTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
